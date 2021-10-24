@@ -14,7 +14,7 @@
 }
 
 html, body {
-  height: 100vh;
+  height: 100%;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
@@ -22,4 +22,65 @@ html, body {
 body {
   display: grid;
   place-items: center;
+  background-color: var(--darker);
+}
+
+main {
+  background: url(./images/background.svg);
+  width: 375px;
+  height: 812px;
+}
+
+.container {
+  max-width: 250px;
+  margin: auto;
+  text-align: center;
+  color: var(--lighter);
+}
+
+.avatar {
+  width: 10rem;
+  margin: 11.5rem auto 0;
+  position: relative;
+}
+
+.avatar span {
+  position: absolute;
+  top: -15px;
+  z-index: 1;
+}
+
+.avatar > img {
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: 1.5rem 0 0.25rem;
+}
+
+.container > a {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+
+  text-decoration: none;
+  color: var(--light);
+
+  margin-bottom: 2rem;
+}
+
+p {
+  margin-bottom: 3.625rem;
+}
+
+ul {
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
 }
